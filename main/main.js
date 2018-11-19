@@ -1,9 +1,24 @@
 // Write your cade below:
-function caclRemaindar() {};
+function caclRemaindar(x,y) {return x%y};
 
-function caclSum() {};
+function caclSum(array) {
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+        sum += (array[i]);
+    }
+    return sum;
+};
 
-function caclSumInConditon() {};
+function caclSumInConditon(array, y) {
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+        if(array[i] < y){
+            sum += (array[i]);
+        }
+    }
+    return sum;
+};
+
 
 module.exports = {
     caclRemaindar,
